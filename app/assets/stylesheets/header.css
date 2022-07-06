@@ -5,7 +5,7 @@
 
 html {
   font-size: 1rem;
-  font-family: proximaBold;
+  font-family: proximaBold, sans-serif;
 }
 
 .splash-screen-container {
