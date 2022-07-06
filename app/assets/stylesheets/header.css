@@ -3,6 +3,10 @@
   src: url(../fonts/Proxima_Nova_Alt_Bold.otf);
 }
 
+html {
+  font-size: 1rem;
+  font-family: proximaBold;
+}
 
 .splash-screen-container {
   background-color: #f1f3f2;
@@ -20,23 +24,10 @@
 }
 
 .nav {
- position: absolute;
- bottom: 5%;
- width: 90%;
- margin: auto;
-}
-
-.nav ul li {
-  list-style-type: none;
-  margin-bottom: 5px;
-}
-
-.nav ul li a {
-  text-decoration: none;
-   display: block;
-   padding: 15px;
-   text-align: center;
-   border-radius: 5px;
+  position: absolute;
+  bottom: 5%;
+  width: 90%;
+  margin: auto;
 }
 
 .login a {
@@ -46,4 +37,17 @@
 
 .signup a {
   color: #a5a6a9;
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
 }
