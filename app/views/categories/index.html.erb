@@ -14,7 +14,9 @@
         </ul>
       </nav>
   </header>
-  <section>
+  <%
+=begin%>
+ <section>
        
      <% if @foods.exists? %>
      
@@ -34,6 +36,8 @@
           <p>No Food Added yet</p> 
       <% end %>
   <div>
-  <<%= button_to "Add Category", model %>>
-  </section>
+  <%= button_to "Add Category", model %>>
+  </section> 
+<%
+=end%>
 </section>

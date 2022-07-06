@@ -3,4 +3,8 @@ class CategoriesController < ApplicationController
     @categories = current_user.categories.all
   end
   
+  def new
+    @category = Category.new
+  end
+  
 end
