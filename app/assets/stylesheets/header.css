@@ -20,7 +20,7 @@ html {
 }
 
 .logo h1 {
-  font-family: proximaBold;
+  font-family: proximaBold, sans-serif;
 }
 
 .nav {
