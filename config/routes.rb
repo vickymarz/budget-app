@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "splash_screens#index"
-  resources :categories
+  resources :categories do
+    resources :businesses
+  end
 end
