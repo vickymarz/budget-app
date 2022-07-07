@@ -37,4 +37,7 @@
     <%= button_to "Delete Category", category_path, method: :delete, class: 'category-btn' %>
 
   </section> 
+  <div class='category-footer'>
+    <%= button_to "Add New Transaction", new_category_business_path(@category), method: :get, class: 'category-btn' %>
+  </div>
 </section>
