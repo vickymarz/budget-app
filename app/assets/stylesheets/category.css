@@ -2,7 +2,6 @@
   position: fixed;
   width: 100%;
   bottom: 0;
- 
 }
 
 .category-btn {
@@ -19,7 +18,7 @@
 }
 
 .actions {
-  width: 100%
+  width: 100%;
 }
 
 .categories_controllers {
@@ -43,9 +42,9 @@
 }
 
 .details {
-   background-color: white;
-   margin-top: 15px;
-   padding: 15px;
+  background-color: white;
+  margin-top: 15px;
+  padding: 15px;
 }
 
 .desc {
@@ -69,7 +68,7 @@
   font-weight: bold;
 }
 
-.transaction small{
+.transaction small {
   color: #b2b2b2;
   padding: 10px 0;
 }
@@ -87,8 +86,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-   color: #b2b2b2;
-   margin-bottom: 50px;
+  color: #b2b2b2;
+  margin-bottom: 50px;
 }
-
-
