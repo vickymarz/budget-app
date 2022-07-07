@@ -1,14 +1,15 @@
 class CategoriesController < ApplicationController
+  before_action :authenticate_user!
   def index
-    @categories = current_user.categories.all
+    @categories = Category.where(author_id: current_user.id)
   end
   
   def new
-    @category = current_user.categories.new
+    @category = Category.new
   end
-  
+
   def create
-    @category = current_user.categories.new(category_params)
+    @category = Category.new(category_params)
 
     if @category.save
       flash[:success] = "Category successfully created"
@@ -21,7 +22,7 @@ class CategoriesController < ApplicationController
 
   def category_params
     my_category = params.require(:category).permit(:name, :icon)
-    my_category[:user] = current_user
+    my_category[:author] = current_user
     my_category
   end
   

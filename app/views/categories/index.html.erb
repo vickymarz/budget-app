@@ -14,30 +14,31 @@
         </ul>
       </nav>
   </header>
-  <%
-=begin%>
+
  <section>
        
-     <% if @foods.exists? %>
-     
-      <ul>
-          <% @foods.each do |food| %>
+     <% if @categories.exists? %>
+      <ul class="category-lists-wrapper">
+          <% @categories.each do |category| %>
           <li>
-             <img src="" alt="icon">
-             <div>
-             <p></p>
-             <small></small>
-             <div>
-             <strong></strong>
-          </li>
+            <div class='desc'>
+              <%= image_tag(category.icon, class:'list_image') %>
+              <span>
+                <p><%= category.name %></p>
+                <small><%= category.created_at.to_date.strftime("%d %b, %Y") %></small>
+              </span>
+            </div>
+              <strong>$0.00</strong>
+          </li> 
+          <% end %>
       </ul>
  
+   
    <% else %>
-          <p>No Food Added yet</p> 
+          <p>No Category Added yet</p> 
       <% end %>
   <div>
-  <%= button_to "Add Category", model %>>
-  </section> 
-<%
-=end%>
+ <div class='category-footer'>
+    <%= button_to "Add Category", new_category_path, method: :get, class: 'category-btn' %>
+  </div>
 </section>

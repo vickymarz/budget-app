@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: proximaThin;
-  src: url(../fonts/Proxima_Nova_Alt_Thin.otf);
+  src: url(/app/assets/fonts/Proxima_Nova_Alt_Thin.otf );
 }
 
 *,
@@ -33,6 +33,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .user-input-container {
