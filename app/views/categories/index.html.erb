@@ -20,7 +20,7 @@
      <% if @categories.exists? %>
       <ul class="category-lists-wrapper">
           <% @categories.each do |category| %>
-           <%= link_to category_path(@categories), method: :get do %> 
+           <%= link_to category_path(category.id), method: :get do %> 
           <li>
           
             <div class='desc'>
