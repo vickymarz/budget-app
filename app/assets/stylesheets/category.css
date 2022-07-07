@@ -42,6 +42,12 @@
   padding: 10px;
 }
 
+.details {
+   background-color: white;
+   margin-top: 15px;
+   padding: 15px;
+}
+
 .desc {
   display: flex;
   gap: 10px;
@@ -62,4 +68,27 @@
   color: #b2b2b2;
   font-weight: bold;
 }
+
+.transaction small{
+  color: #b2b2b2;
+  padding: 10px 0;
+}
+
+strong {
+  color: black;
+}
+
+hr {
+  background-color: #fefefe71;
+  margin: 10px 0;
+}
+
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   color: #b2b2b2;
+   margin-bottom: 50px;
+}
+
 

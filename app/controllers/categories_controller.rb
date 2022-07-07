@@ -20,6 +20,11 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def show
+    @category = Category.includes(:author).find(params[:id])
+  end
+  
+
   def category_params
     my_category = params.require(:category).permit(:name, :icon)
     my_category[:author] = current_user

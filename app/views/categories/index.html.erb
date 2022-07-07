@@ -4,10 +4,10 @@
         <ul class='links'>
           <li>
             <i class="fa fa-bars"></i>
-          <li>
+          </li>
           <li>
             TRANSACTIONS
-          <li>
+          </li>
           <li>
             <i class="fa fa-search"></i>
           </li>
@@ -20,7 +20,9 @@
      <% if @categories.exists? %>
       <ul class="category-lists-wrapper">
           <% @categories.each do |category| %>
+           <%= link_to category_path(@categories), method: :get do %> 
           <li>
+          
             <div class='desc'>
               <%= image_tag(category.icon, class:'list_image') %>
               <span>
@@ -30,6 +32,7 @@
             </div>
               <strong>$0.00</strong>
           </li> 
+          <% end %>
           <% end %>
       </ul>
  
