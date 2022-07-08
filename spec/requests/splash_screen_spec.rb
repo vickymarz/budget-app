@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'SplashScreens', type: :request do
+RSpec.describe 'SplashScreens', type: :request do
   before(:each) { get root_path }
 
   context 'index' do
