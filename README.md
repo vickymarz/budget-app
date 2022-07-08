@@ -5,7 +5,13 @@
 
 A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+![screenshot](./screenshot.png)
 
+
+## Live Version
+
+[See Live Version](https://evening-caverns-47353.herokuapp.com/)
+[Demo Video](https://www.loom.com/share/4a087545c28044feb7ce7046d2ad37cd)
 ## Built With
 
 - Ruby
