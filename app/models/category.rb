@@ -4,5 +4,6 @@ class Category < ApplicationRecord
   has_many :businesses_categories, dependent: :destroy
   has_many :businesses, through: :businesses_categories
 
+  validates :icon, presence: true
   validates :name, presence: true
 end
