@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!
   def index
     @categories = Category.where(author_id: current_user.id)
+    
   end
 
   def new
@@ -21,7 +22,8 @@ class CategoriesController < ApplicationController
   end
 
   def show
-    @category = Category.includes(:author).find(params[:id])
+    @category = Category.includes(:businesses).find(params[:id])
+    @transactions = @category.businesses.order(created_at: :desc)
   end
 
   def category_params

@@ -16,7 +16,6 @@
       </ul>
     </nav>
   </header>
-    <%= render "form", business: @business %>
   
- 
+   <%= render partial: "form", locals: { business: @business, categories: @categories } %>
 </section>
