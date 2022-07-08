@@ -9,6 +9,10 @@ gem 'cancancan'
 
 gem 'font-awesome-rails'
 
+gem 'ffi'
+
+gem 'rails-controller-testing'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
@@ -56,6 +60,9 @@ gem 'bootsnap', require: false
 gem 'rubocop', '>= 1.0', '< 2.0'
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+
+  gem 'rspec'
+  gem 'rspec-rails'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
 
