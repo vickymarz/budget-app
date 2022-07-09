@@ -41,12 +41,13 @@
   padding: 10px;
 }
 
-.logout button{
- color: white;
- background: none;
- outline: none;
- border: none;
+.logout button {
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
 }
+
 .details {
   background-color: white;
   margin-top: 15px;
