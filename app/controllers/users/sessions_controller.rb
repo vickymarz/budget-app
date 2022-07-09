@@ -12,9 +12,11 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # DELETE /resource/sign_out
-  # def destroy
-  #   super
-  # end
+  def destroy
+    @user = User.find_by(name: params["name"])
+    sign_out @user
+    redirect_to root_path
+  end
 
   # protected
 

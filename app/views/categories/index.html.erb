@@ -8,8 +8,8 @@
           <li>
             TRANSACTIONS
           </li>
-          <li>
-            <%= link_to "Logout", destroy_user_session_path, :method: :delete %>
+          <li class="logout">
+            <%= button_to "Logout", destroy_user_session_path(current_user), method: :delete %>
           </li>
         </ul>
       </nav>
