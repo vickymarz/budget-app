@@ -1,8 +1,10 @@
 <section class='categories_controllers'>
   <div class="user-info">
-    <%= image_tag gravatar_image_url(current_user), :class => "avatar" %>
-        <span class="user-text__name"><%= current_user.name %></span>
-      </div>
+    <div class="avatar-img">
+      <%= image_tag "avatar.png", :class => "avatar" %>
+    </div>
+    <span class="user-name"><%= current_user.name %></span>
+  </div>
      <header class="input-container">
       <nav>
         <ul class='links'>
