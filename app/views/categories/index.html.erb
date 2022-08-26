@@ -1,28 +1,23 @@
 <section class='categories_controllers'>
-  <div class="user-info">
-    <div class="avatar-img">
-      <%= image_tag "avatar.png", :class => "avatar" %>
+  <header class="category-header">
+    <div class="user-info">
+      <div class="avatar-img">
+        <%= image_tag "avatar.png", :class => "avatar" %>
+      </div>
+      <span class="user-name"><%= current_user.name %></span>
     </div>
-    <span class="user-name"><%= current_user.name %></span>
-  </div>
-     <header class="input-container">
-      <nav>
-        <ul class='links'>
-          <li>
-            <i class="fa fa-bars"></i>
-          </li>
-          <li>
-            TRANSACTIONS
-          </li>
-          <li class="logout">
-            <%= button_to "Logout", destroy_user_session_path(current_user), method: :delete %>
-          </li>
-        </ul>
-      </nav>
+    <li class="logout">
+      <%= button_to "Logout", destroy_user_session_path(current_user), method: :delete %>
+    </li>
   </header>
-
- <section>
-       
+  <div class="category-section">
+     <h2 class="all-transaction">All Transactions</h2>
+     <div class="add-category-wrapper">
+        <div class="add-new-category">
+          <%= button_to "+", new_category_path, method: :get, class: 'category-btn' %>
+        </div>
+        <p>Create new category</p>
+     </div>
      <% if @categories.exists? %>
       <ul class="category-lists-wrapper">
           <% @categories.each do |category| %>
@@ -31,7 +26,7 @@
           
             <div class='desc'>
               <%= image_tag(category.icon, class:'list_image') %>
-              <span>
+              <span class="desc-text">
                 <p><%= category.name %></p>
                 <small><%= category.created_at.to_date.strftime("%d %b, %Y") %></small>
               </span>
@@ -46,10 +41,11 @@
  
    
    <% else %>
-          <p>No Category Added yet</p> 
+          <p class="nil-category">No Category Added yet</p> 
       <% end %>
   <div>
- <div class='category-footer'>
-    <%= button_to "Add Category", new_category_path, method: :get, class: 'category-btn' %>
-  </div>
+ <%# <div class='category-footer'> %>
+    <%# <%= button_to "Add Category", new_category_path, method: :get, class: 'category-btn' %> 
+  <%# </div> %>
+</div>
 </section>
