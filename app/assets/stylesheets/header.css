@@ -29,6 +29,11 @@ html {
   backdrop-filter: blur(5.5px);
 }
 
+.title {
+  color: #BF88F8;
+  margin-bottom: 15px;
+}
+
 .splash-image {
   width: 150px;
   height: 150px;
@@ -42,11 +47,11 @@ html {
 
 .intro-text {
   color: white;
-  margin-top: 70px;
+  margin-top: 40px;
   text-align: center;
 }
 
-.intro-text h1 {
+.intro-text h2 {
   font-size: 1.8rem;
   padding-bottom: 10px;
   animation: title 1s ease-in-out;

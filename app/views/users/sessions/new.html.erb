@@ -16,6 +16,7 @@
       </ul>
     </nav>
   </header>
+   <section class="form-section">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:class => 'form', :id => 'form' }) do |f| %>
     
     
@@ -30,4 +31,5 @@
   <% end %>
 
   <%= render "users/shared/links" %>
+  </section>
 </section>
