@@ -27,7 +27,9 @@
     <div class="field">
       <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password' %>
     </div>
-
+      <div class='field'>
+        <input type="submit" value='Continue' id='submit-btn'>
+    </div>
   <% end %>
 
   <%= render "users/shared/links" %>

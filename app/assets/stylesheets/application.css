@@ -4,10 +4,6 @@
  *= require font-awesome
  */
 
-@font-face {
-  font-family: proximaThin;
-  src: url(Proxima_Nova_Alt_Thin.otf);
-}
 
 *,
 ::before,
@@ -25,7 +21,6 @@ html {
 
 body {
   width: 100%;
-  min-height: 100vh;
   background-color: #283F54;
   overflow-x: hidden;
   position: relative;
@@ -41,17 +36,7 @@ li {
 
 .user-input-container {
   width: 100%;
-  min-height: 100vh;
   position: relative;
-}
-
-.register-overlay {
-  position: relative;
-  /* background-color: #284056;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(5.5px); */
-  width: 100%;
-  min-height: 100vh;
 }
 
 .input-container {
@@ -89,7 +74,7 @@ li {
   height: 100vh;
   margin-top: 50px;
   border-radius: 50px 50px 0 0;
-  padding-top: 50px;
+  padding: 10px 0;
 }
 
 .form {
@@ -97,21 +82,27 @@ li {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .field {
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .form input {
+  padding: 20px 10px;
+  border: 1px solid #BF88F8;
   width: 100%;
-  padding: 15px 10px;
-  border: 1px solid #f1f3f2;
+  background: none;
+  outline: none;
+  border-radius: 15px;
 }
 
 ::placeholder {
   color: #c3c4c6;
+  font-size: 1.1rem;
 }
 
 .forgot-password {
@@ -127,4 +118,15 @@ li {
   color: black;
   background: none;
   font-size: 1rem;
+}
+
+#submit-btn {
+  padding: 18px 10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  border-radius: 50px;
 }
