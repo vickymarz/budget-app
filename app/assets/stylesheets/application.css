@@ -39,6 +39,10 @@ li {
   position: relative;
 }
 
+.avatar_field {
+  display: none;
+}
+
 .input-container {
   background-color: #BF88F8;
   padding: 0 10px;
@@ -98,6 +102,8 @@ li {
   background: none;
   outline: none;
   border-radius: 15px;
+  font-size: 1.1rem;
+  color: white;
 }
 
 ::placeholder {

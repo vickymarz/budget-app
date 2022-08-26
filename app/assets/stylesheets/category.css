@@ -1,3 +1,9 @@
+.categories_controllers {
+  background-color: #182533;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .category-footer {
   position: fixed;
   width: 100%;
@@ -19,12 +25,6 @@
 
 .actions {
   width: 100%;
-}
-
-.categories_controllers {
-  background-color: #f1f3f2;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .category-lists-wrapper {
