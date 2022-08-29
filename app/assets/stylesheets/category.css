@@ -91,11 +91,16 @@
   margin-top: 50px;
 }
 
+.category-title {
+  color: white;
+  padding: 20px 0;
+}
+
 .icons {
   display: grid;
   padding-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5%;
   justify-items: center;
   align-items: center;
 }
@@ -114,7 +119,6 @@
 .transaction-img {
   border-radius: 50%;
   background: linear-gradient(135deg, #dfec51 0%, #a3df33 100%);
-  margin-right: 1rem;
   color: #fff;
   font-size: 1.6rem;
   padding: 15px 18px;
@@ -133,17 +137,21 @@
   bottom: 0;
 }
 
-.category-btn {
+#category-btn {
   text-align: center;
   border: none;
   outline: none;
-  font-size: 2rem;
-  color: #182533;
-  background: none;
+  font-size: 1.3rem;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(124, 120, 120) , black);
 }
 
-.actions {
-  width: 100%;
+#actions {
+  width: 60%;
+  border: none;
+ outline: none;
 }
 
 .category-lists-wrapper {
