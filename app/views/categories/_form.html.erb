@@ -25,42 +25,42 @@
           <ion-icon name="football" class="transaction-img football" value="Sport"></ion-icon>
         <% end %> 
         <%= f.radio_button :icon, "Gymnastics" %> 
-        <%= f.label :icon, :value => "barbell" do%>
-          <ion-icon name="barbell" class="transaction-img barbell" value="barbell"></ion-icon>
+        <%= f.label :icon, :value => "Gymnastics" do%>
+          <ion-icon name="barbell" class="transaction-img barbell" value="Gymnastics"></ion-icon>
         <% end %>
         <!-- car -->
         <%= f.radio_button :icon, "Transportation" %> 
-        <%= f.label :icon, :value => "car" do%>
-          <ion-icon name="car" class="transaction-img car" value="car"></ion-icon>
+        <%= f.label :icon, :value => "Transportation" do%>
+          <ion-icon name="car" class="transaction-img car" value="Transportation"></ion-icon>
         <% end %>
         <!-- call -->
         <%= f.radio_button :icon, "Communication" %>
-         <%= f.label :icon, :value => "call" do%>
-          <ion-icon name="call" class="transaction-img call" value="call"></ion-icon>
+         <%= f.label :icon, :value => "Communication" do%>
+          <ion-icon name="call" class="transaction-img call" value="Communication"></ion-icon>
         <% end %>
         <!-- bus -->
-        <%= f.radio_button :icon, "Education" %> <%= f.label :icon, :value => "bus" do%>
-          <ion-icon name="book" class="transaction-img book" value="bus"></ion-icon>
+        <%= f.radio_button :icon, "Education" %> <%= f.label :icon, :value => "Education" do%>
+          <ion-icon name="book" class="transaction-img book" value="Education"></ion-icon>
         <% end %>
         <!-- game-controller -->
-        <%= f.radio_button :icon, "Game" %> 
-        <%= f.label :icon, :value => "game-controller" do%>
-          <ion-icon name="game-controller" class="transaction-img game-controller" value="game-controller"></ion-icon>
+        <%= f.radio_button :icon, "Games" %> 
+        <%= f.label :icon, :value => "Games" do%>
+          <ion-icon name="game-controller" class="transaction-img game-controller" value="Games"></ion-icon>
         <% end %>
         <!-- home -->
         <%= f.radio_button :icon, "Housing" %> 
-        <%= f.label :icon, :value => "home" do%>
-          <ion-icon name="home" class="transaction-img house" value="home"></ion-icon>
+        <%= f.label :icon, :value => "Housing" do%>
+          <ion-icon name="home" class="transaction-img house" value="Housing"></ion-icon>
         <% end %>
         <!-- shirt -->
         <%= f.radio_button :icon, "Fashion" %> 
-        <%= f.label :icon, :value => "shirt" do%>
-          <ion-icon name="shirt" class="transaction-img shirt" value="shirt"></ion-icon>
+        <%= f.label :icon, :value => "Fashion" do%>
+          <ion-icon name="shirt" class="transaction-img shirt" value="Fashion"></ion-icon>
         <% end %>
         <!-- bandage -->
         <%= f.radio_button :icon, "Health" %> 
-        <%= f.label :icon, :value => "bandage" do%>
-          <ion-icon name="bandage" class="transaction-img bandage" value="bandage"></ion-icon>
+        <%= f.label :icon, :value => "Health" do%>
+          <ion-icon name="bandage" class="transaction-img bandage" value="Health"></ion-icon>
         <% end %>
       </div>
         <% category.errors.full_messages_for(:icon).each do |message| %>
