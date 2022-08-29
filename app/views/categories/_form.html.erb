@@ -1,18 +1,65 @@
-<%= form_with model: category, url: categories_path, :html => {:class => 'form', :id => 'form' }  do |form| %>
+<%= form_with model: category, url: categories_path, :html => {:class => 'form', :id => 'form' }  do |f| %>
        <div class="field">
-        <%= form.text_field :name, autofocus: true, autocomplete: "text", placeholder: "Enter category name" %>
+        <%= f.text_field :name, autofocus: true, autocomplete: "text", placeholder: "Enter category name" %>
         <% category.errors.full_messages_for(:name).each do |message| %>
           <div><%= message %></div>
         <% end %>
       </div>
        <div class="field">
-        <%= form.text_field :icon, autofocus: true, placeholder: "Enter category icon url" %>
+       <div class="icons">
+        <%= f.radio_button :icon, "Food" %>
+        <%= f.label :icon, class: "fast-food-outline", :value => "Food" do%>
+            <ion-icon name="fast-food-outline" class="transaction-img food" value="Food"></ion-icon>
+        <% end %> 
+        <%= f.radio_button :icon, "bag" %> 
+        <%= f.label :icon, :value => "bag" do%>
+          <ion-icon name="headset" class="transaction-img headset" value="bag"></ion-icon>
+        <% end %> 
+        <%= f.radio_button :icon, "bulb" %> 
+        <%= f.label :icon, :value => "ticket" do%>
+          <ion-icon name="bulb" class="transaction-img bulb" value="ticket"></ion-icon>
+        <% end %>
+        <%= f.radio_button :icon, "airplane" %> <%= f.label :icon, :value => "airplane" do%>
+          <ion-icon name="airplane" class="transaction-img airplane" value="airplane"></ion-icon>
+        <% end %> 
+        <%= f.radio_button :icon, "barbell" %> <%= f.label :icon, :value => "barbell" do%>
+          <ion-icon name="barbell" class="transaction-img barbell" value="barbell"></ion-icon>
+        <% end %>
+        <!-- car -->
+        <%= f.radio_button :icon, "car" %> <%= f.label :icon, :value => "car" do%>
+          <ion-icon name="car" class="transaction-img car" value="car"></ion-icon>
+        <% end %>
+        <!-- call -->
+        <%= f.radio_button :icon, "call" %> <%= f.label :icon, :value => "call" do%>
+          <ion-icon name="call" class="transaction-img call" value="call"></ion-icon>
+        <% end %>
+        <!-- bus -->
+        <%= f.radio_button :icon, "bus" %> <%= f.label :icon, :value => "bus" do%>
+          <ion-icon name="bus" class="transaction-img bus" value="bus"></ion-icon>
+        <% end %>
+        <!-- game-controller -->
+        <%= f.radio_button :icon, "game-controller" %> <%= f.label :icon, :value => "game-controller" do%>
+          <ion-icon name="game-controller" class="transaction-img game-controller" value="game-controller"></ion-icon>
+        <% end %>
+        <!-- home -->
+        <%= f.radio_button :icon, "home" %> <%= f.label :icon, :value => "home" do%>
+          <ion-icon name="home" class="transaction-img house" value="home"></ion-icon>
+        <% end %>
+        <!-- shirt -->
+        <%= f.radio_button :icon, "shirt" %> <%= f.label :icon, :value => "shirt" do%>
+          <ion-icon name="shirt" class="transaction-img shirt" value="shirt"></ion-icon>
+        <% end %>
+        <!-- bandage -->
+        <%= f.radio_button :icon, "bandage" %> <%= f.label :icon, :value => "bandage" do%>
+          <ion-icon name="bandage" class="transaction-img bandage" value="bandage"></ion-icon>
+        <% end %>
+      </div>
         <% category.errors.full_messages_for(:icon).each do |message| %>
           <div><%= message %></div>
         <% end %>
       </div>
 
        <div class="actions">
-      <%= form.submit "Add", class: 'category-btn'%>
+      <%= f.submit "Add", class: 'category-btn'%>
     </div>
 <% end %>

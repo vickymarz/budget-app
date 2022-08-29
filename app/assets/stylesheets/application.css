@@ -4,6 +4,9 @@
  *= require font-awesome
  */
 
+ /*
+ *= require ionicons
+ */
 
 *,
 ::before,
@@ -21,7 +24,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #283F54;
+  background-color: #283f54;
   overflow-x: hidden;
   position: relative;
 }
@@ -44,7 +47,7 @@ li {
 }
 
 .input-container {
-  background-color: #BF88F8;
+  background-color: #bf88f8;
   padding: 0 10px;
   margin: 30px 15px;
   border-radius: 20px;
@@ -73,7 +76,7 @@ li {
 }
 
 .form-section {
-  background-color: #304C64;
+  background-color: #304c64;
   width: 100%;
   height: 100vh;
   margin-top: 50px;
@@ -97,7 +100,7 @@ li {
 
 .form input {
   padding: 20px 10px;
-  border: 1px solid #BF88F8;
+  border: 1px solid #bf88f8;
   width: 100%;
   background: none;
   outline: none;

@@ -4,7 +4,10 @@
       <div class="avatar-img">
         <%= image_tag "avatar.png", :class => "avatar" %>
       </div>
-      <span class="user-name"><%= current_user.name %></span>
+      <div class="user-details">
+        <p class="welcome">Welcome!</p>
+        <h2 class="user-name"><%= current_user.name %></h2>
+      </div>
     </div>
     <li class="logout">
       <%= button_to "Logout", destroy_user_session_path(current_user), method: :delete %>
@@ -25,13 +28,13 @@
           <li>
           
             <div class='desc'>
-              <%= image_tag(category.icon, class:'list_image') %>
+            <ion-icon name="<%= category.icon %>" class="list-image <%= category.icon %>"></ion-icon>
               <span class="desc-text">
                 <p><%= category.name %></p>
                 <small><%= category.created_at.to_date.strftime("%d %b, %Y") %></small>
               </span>
             </div>
-              <p class='strong'>$<%= category.businesses.sum(:amount) || '0.00'%>
+              <p class='strong'>- $<%= category.businesses.sum(:amount) || '0.00'%>
               
               </p>
           </li> 

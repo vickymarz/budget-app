@@ -1,3 +1,4 @@
+@import "bootstrap";
 
 .categories_controllers {
   background-color: #182533;
@@ -19,9 +20,17 @@
   padding: 20px;
 }
 
+.welcome {
+  color: #bf88f8;
+}
+
+.user-details {
+  line-height: 1;
+}
+
 .user-name {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .avatar-img {
@@ -82,6 +91,40 @@
   margin-top: 50px;
 }
 
+.icons {
+  display: grid;
+  padding-bottom: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.icons>input {
+  display: none;
+}
+
+.icons label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.transaction-img {
+  /* width: 2.4rem;
+  height: 2.4rem; */
+  /* padding: 1.2rem; */
+  border-radius: 50%;
+  background: linear-gradient(135deg, #dfec51 0%, #a3df33 100%);
+  margin-right: 1rem;
+  color: #fff;
+
+  font-size: 1.6rem;
+  padding: 10px 18px;
+  border-radius: 71%;
+}
+
 .category-footer {
   position: fixed;
   width: 100%;
@@ -106,7 +149,7 @@
 }
 
 .category-lists-wrapper li {
-  background-color: #BF88F8;
+  background-color: #ccb4e5;
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
@@ -165,8 +208,7 @@
 }
 
 .strong {
-  font-weight: 900;
-  color: black;
+  color: red;
 }
 
 .transaction small {
@@ -195,4 +237,56 @@ hr {
 #business_category {
   width: 100%;
   padding: 15px;
+}
+
+.fast-food {
+  background: linear-gradient(135deg, #dfec51 0%, #a3df33 100%);
+}
+
+.headset {
+  background: linear-gradient(135deg, #889aeb 0%, #3d639b 100%);
+}
+
+.bulb {
+  background: linear-gradient(135deg, #f2d50f 0%, #da0641 100%);
+}
+
+.airplane {
+  background: linear-gradient(135deg, #75798b 0%, #3d639b 100%);
+}
+
+.barbell {
+  background: linear-gradient(135deg, #e2ddba 0%, #aa6a7c 100%);
+}
+
+.trash {
+  background: linear-gradient(135deg, #f2d50f 0%, #da0641 100%);
+}
+
+.car {
+  background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
+}
+
+.call {
+  background: linear-gradient(135deg, #ff57b9 0%, #a704fd 100%);
+}
+
+.bus {
+  background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
+}
+
+.game-controller {
+  background: linear-gradient(135deg, #0ff0b3 0%, #036ed9 100%);
+}
+
+.house {
+  background: linear-gradient(135deg, #e3e3e3 0%, #5d6874 100%);
+}
+
+.shirt {
+  background: linear-gradient(135deg, #fcdf8a 0%, #f38381 100%);
+}
+
+.bandage {
+  background: linear-gradient(135deg, #f5515f 0%, #a1051d 100%);
 }

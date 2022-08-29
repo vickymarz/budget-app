@@ -30,7 +30,7 @@ html {
 }
 
 .title {
-  color: #BF88F8;
+  color: #bf88f8;
   margin-bottom: 15px;
 }
 
@@ -56,7 +56,6 @@ html {
   padding-bottom: 10px;
   animation: title 1s ease-in-out;
 }
-
 
 @keyframes title {
   0% {
@@ -103,7 +102,7 @@ html {
 }
 
 .signup a {
-  background-color: #BF88F8;
+  background-color: #bf88f8;
   color: black;
 }
 
