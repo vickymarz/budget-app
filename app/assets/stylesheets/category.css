@@ -112,17 +112,19 @@
 }
 
 .transaction-img {
-  /* width: 2.4rem;
-  height: 2.4rem; */
-  /* padding: 1.2rem; */
   border-radius: 50%;
   background: linear-gradient(135deg, #dfec51 0%, #a3df33 100%);
   margin-right: 1rem;
   color: #fff;
-
   font-size: 1.6rem;
-  padding: 10px 18px;
+  padding: 15px 18px;
   border-radius: 71%;
+  transition: border-radius 0.5s ease;
+  cursor: pointer;
+}
+
+.transaction-img:hover {
+  border-radius: 10px;
 }
 
 .category-footer {
@@ -251,7 +253,7 @@ hr {
   background: linear-gradient(135deg, #f2d50f 0%, #da0641 100%);
 }
 
-.airplane {
+.football {
   background: linear-gradient(135deg, #75798b 0%, #3d639b 100%);
 }
 
@@ -271,7 +273,7 @@ hr {
   background: linear-gradient(135deg, #ff57b9 0%, #a704fd 100%);
 }
 
-.bus {
+.book {
   background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);
 }
 
