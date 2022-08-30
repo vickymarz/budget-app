@@ -14,10 +14,10 @@
 
 .category-btnn {
   border: none;
-    outline: none;
-    background: none;
-    font-size: 2rem;
-    cursor: pointer;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .user-info {
@@ -112,7 +112,7 @@
   align-items: center;
 }
 
-.icons>input {
+.icons > input {
   display: none;
 }
 
@@ -124,13 +124,12 @@
 }
 
 .transaction-img {
-  border-radius: 50%;
   background: linear-gradient(135deg, #dfec51 0%, #a3df33 100%);
   color: #fff;
   font-size: 1.6rem;
   padding: 15px 18px;
   border-radius: 71%;
-  transition: border-radius 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
@@ -164,7 +163,8 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#category-btn,  #transaction-btn {
+#category-btn,
+#transaction-btn {
   text-align: center;
   border: none;
   outline: none;
@@ -173,7 +173,7 @@
   color: white;
   padding: 15px;
   border-radius: 30px;
-  background: linear-gradient(to right, rgb(124, 120, 120) , black);
+  background: linear-gradient(to right, rgb(124, 120, 120), black);
 }
 
 #transaction-btn {
@@ -189,8 +189,8 @@
 #actions {
   width: 50%;
   border: none;
- outline: none;
- cursor: pointer;
+  outline: none;
+  cursor: pointer;
 }
 
 .category-lists-wrapper {
@@ -220,33 +220,27 @@
   float: right;
 }
 
-/* .details {
-  background-color: white;
-  margin-top: 15px;
-  padding: 15px;
-  box-shadow: 2px 2px 10px 2px grey;
-} */
-.payment .desc {
-  display: flex;
-  gap: 10px;
-  background-color: #fcdC34;
-  color: black;
-  padding: 10px 30px;
-  margin-top: 20px;
-  border-radius: 30px;
-  align-items: center;
-} 
-
-#list_image {
-  width: 20px;
-  height: 20px;
-}
-
 .desc {
   display: flex;
   gap: 10px;
   color: black;
   align-items: center;
+}
+
+.payment .desc {
+  display: flex;
+  gap: 10px;
+  background-color: #fcdc34;
+  color: black;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+#list_image {
+  width: 20px;
+  height: 20px;
 }
 
 .desc img {
@@ -273,7 +267,6 @@
   border: none;
   outline: none;
   color: red;
-  cursor: pointer;
   background: none;
   font-size: 1rem;
   cursor: pointer;
@@ -394,12 +387,11 @@ hr {
   background: linear-gradient(135deg, #f5515f 0%, #a1051d 100%);
 }
 
-@media only screen and (min-width:768px) {
-
-.transaction-container {
-  width: 70%;
-  margin: auto;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 0, 0.5);
-  padding: 10px;
-}
+@media only screen and (min-width: 768px) {
+  .transaction-container {
+    width: 70%;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
 }
