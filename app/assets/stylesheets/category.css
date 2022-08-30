@@ -340,7 +340,6 @@ hr {
   display: flex;
   justify-content: center;
   border: 2px solid #bf88f8;
-
 }
 
 .fast-food {
@@ -393,4 +392,14 @@ hr {
 
 .bandage {
   background: linear-gradient(135deg, #f5515f 0%, #a1051d 100%);
+}
+
+@media only screen and (min-width:768px) {
+
+.transaction-container {
+  width: 70%;
+  margin: auto;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
 }

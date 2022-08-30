@@ -27,6 +27,7 @@
         </span>
       </div>   
     </div>
+    <div class="transaction-container">
     <hr>
     <% @transactions.each do |transaction| %> 
     <div class='transaction'>
@@ -43,7 +44,7 @@
    <% end %>
 
     <%= button_to "Delete Category", category_path, method: :delete, class: 'delete-categories' %>
-
+</div>
   </section> 
   <div class='category-footer'>
     <%= button_to "+", new_category_business_path(@category), method: :get, class: 'category-btn' %>
