@@ -17,6 +17,7 @@
     outline: none;
     background: none;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .user-info {
@@ -163,21 +164,33 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#category-btn {
+#category-btn,  #transaction-btn {
   text-align: center;
   border: none;
   outline: none;
+  cursor: pointer;
   font-size: 1.3rem;
   color: white;
-  padding: 10px;
+  padding: 15px;
   border-radius: 30px;
   background: linear-gradient(to right, rgb(124, 120, 120) , black);
 }
 
+#transaction-btn {
+  background: black;
+  margin-top: 20px;
+}
+
+.transaction-actions {
+  width: 50%;
+  margin: auto;
+}
+
 #actions {
-  width: 60%;
+  width: 50%;
   border: none;
  outline: none;
+ cursor: pointer;
 }
 
 .category-lists-wrapper {
@@ -274,6 +287,7 @@
   border-radius: 20px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .strong {
@@ -313,8 +327,20 @@ hr {
 }
 
 #business_category {
-  width: 100%;
-  padding: 15px;
+  width: 90%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  background: none;
+  color: #bf88f8;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #bf88f8;
+
 }
 
 .fast-food {

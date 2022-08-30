@@ -21,7 +21,7 @@
       <p>TOTAL EXPENSES</p>
       <h2>$<%= @category.businesses.sum(:amount) || '0.00' %></h2>
       <div class='desc'>
-        <ion-icon name="<%= @category.icon %>" id="list-image <%= category.icon %>"></ion-icon>
+        <ion-icon name="<%= @category.icon %>" id="list-image <%= @category.icon %>"></ion-icon>
         <span>
           <h3><%= @category.name %></h3>
         </span>
