@@ -136,4 +136,17 @@ html {
   .nav ul li a {
     padding: 10px 30px;
   }
+
+  .form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #submit-btn {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
