@@ -1,16 +1,23 @@
 <header class="splash-screen-container">
-  <div class='logo'>
-    <h1>Budget Now</h1>
-  </div>
+  <div class="overlay">
+  <h1 class="title"> Budget Manager </h1>
+    <div class="splash-image">
+      <%= image_tag 'wallet.png', class: 'splash-illustration' %>
+    </div>
+    <div class="intro-text">
+       <h2> Helping you make smart decisions </h2>
+       <p> Every Decision you make, big or small, impact your life. </p>
+    </div>
   <nav class='nav'>
     <ul>
       <li class='login'>
-        <%= link_to "LOG IN", new_user_session_path %>
+        <%= link_to "Login", new_user_session_path %>
       </li>
       <li class='signup'>
-        <%= link_to "SIGN UP", new_user_registration_path %>
+        <%= link_to "Sign up", new_user_registration_path %>
       </li>
     </ul>
   </nav>
+  </div>
 </header>
 

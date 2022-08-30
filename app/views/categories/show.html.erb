@@ -16,13 +16,18 @@
       </ul>
     </nav>
   </header>
- <section class="category-lists-wrapper details ">
-    <div class='desc'>
-      <%= image_tag(@category.icon, class:'list_image') %>
-      <span>
-        <h2><%= @category.name %></h2>
-      </span>
+  <section class="category-section details ">
+    <div class='payment'>
+      <p>TOTAL EXPENSES</p>
+      <h2>$<%= @category.businesses.sum(:amount) || '0.00' %></h2>
+      <div class='desc'>
+        <ion-icon name="<%= @category.icon %>" id="list-image <%= @category.icon %>"></ion-icon>
+        <span>
+          <h3><%= @category.name %></h3>
+        </span>
+      </div>   
     </div>
+    <div class="transaction-container">
     <hr>
     <% @transactions.each do |transaction| %> 
     <div class='transaction'>
@@ -37,14 +42,12 @@
     <hr>
     
    <% end %>
-   <div class='payment'>
-      <h4>TOTAL PAYMENT</h4>
-      <p>$<%= @category.businesses.sum(:amount) || '0.00' %></p>
-    </div>
-    <%= button_to "Delete Category", category_path, method: :delete, class: 'category-btn' %>
 
+    <%= button_to "Delete Category", category_path, method: :delete, class: 'delete-categories' %>
+</div>
   </section> 
   <div class='category-footer'>
-    <%= button_to "Add New Transaction", new_category_business_path(@category), method: :get, class: 'category-btn' %>
+    <%= button_to "+", new_category_business_path(@category), method: :get, class: 'category-btn' %>
+    <p>Add New Transaction
   </div>
 </section>

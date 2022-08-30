@@ -13,6 +13,13 @@ gem 'ffi'
 
 gem 'rails-controller-testing'
 
+gem 'gravatar_image_tag', '~> 1.2'
+
+# IonIcons
+gem 'font-ionicons-rails', git: 'https://github.com/ricardoemerson/font-ionicons-rails.git'
+
+gem 'prettier'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
