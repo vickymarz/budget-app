@@ -25,11 +25,12 @@
         <span>
           <h3><%= @category.name %></h3>
         </span>
-      </div>   
+      </div>
     </div>
-    <div class="transaction-container">
+      <% if @transactions.present?%>
+        <div class="transaction-container">
     <hr>
-    <% @transactions.each do |transaction| %> 
+    <% @transactions.each do |transaction| %>
     <div class='transaction'>
       <span>
         <h3><%= transaction.name %></h3>
@@ -40,12 +41,15 @@
       </span>
     </div>
     <hr>
-    
-   <% end %>
 
+   <% end %>
     <%= button_to "Delete Category", category_path, method: :delete, class: 'delete-categories' %>
 </div>
-  </section> 
+  <% else %>
+  <p></p>
+  <% end %>
+
+  </section>
   <div class='category-footer'>
     <%= button_to "+", new_category_business_path(@category), method: :get, class: 'category-btn' %>
     <p>Add New Transaction
