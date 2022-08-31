@@ -142,7 +142,7 @@ html {
   cursor: pointer;
 }
 
-.user__option > ion-icon {
+.user__option > .ion-icon {
   font-size: 1rem;
   color: #fff;
   padding: 0.5rem;

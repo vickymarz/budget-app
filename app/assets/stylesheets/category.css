@@ -52,7 +52,7 @@
 
 .user-profile-img {
   width: 100px;
-  height: 100px
+  height: 100px;
 }
 
 .avatar {
@@ -186,7 +186,8 @@
   background: linear-gradient(to right, rgb(124, 120, 120), black);
 }
 
-#transaction-btn, #update {
+#transaction-btn,
+#update {
   background: black;
   margin-top: 20px;
 }
@@ -195,8 +196,8 @@
   padding: 10px 40px;
   border: none;
   cursor: pointer;
-
 }
+
 .transaction-actions {
   width: 50%;
   margin: auto;
