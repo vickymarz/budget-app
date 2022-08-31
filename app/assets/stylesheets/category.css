@@ -249,15 +249,16 @@
   gap: 10px;
   background-color: #fcdc34;
   color: black;
-  padding: 10px 30px;
+  padding: 10px 50px;
   margin-top: 20px;
   border-radius: 30px;
   align-items: center;
 }
 
-#list_image {
+#list-img {
   width: 20px;
   height: 20px;
+  padding: 10px;
 }
 
 .desc img {
