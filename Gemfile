@@ -20,6 +20,8 @@ gem 'font-ionicons-rails', git: 'https://github.com/ricardoemerson/font-ionicons
 
 gem 'prettier'
 
+gem 'image_processing', '~> 1.2'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
