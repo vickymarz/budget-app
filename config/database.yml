@@ -32,7 +32,7 @@ development:
   username: postgres
 
   # The password associated with the postgres role (username).
-  password: Anambrastate@1
+  password: <%= ENV["database_password"] %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -58,7 +58,7 @@ development:
 test:
   <<: *default
   database: budget_app_test
-  password: Anambrastate@1
+  password: <%= ENV["database_password"] %>
   host: localhost
   username: postgres
   port: 5432
