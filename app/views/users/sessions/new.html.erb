@@ -18,7 +18,7 @@
   </header>
    <section class="form-section">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), :html => {:class => 'form', :id => 'form' }) do |f| %>
-    
+  <%= render "users/shared/error_messages", resource: resource %>
     
     <div class="field">
       <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>

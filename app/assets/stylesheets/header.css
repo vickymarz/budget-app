@@ -121,6 +121,54 @@ html {
   font-weight: bolder;
 }
 
+.user__option {
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+#option-text {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #fff;
+  color: rgb(32, 32, 32);
+  cursor: pointer;
+}
+
+.user__option > .ion-icon {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem;
+  background-color: #64e085;
+  border-radius: 30%;
+}
+
+.category-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  background-color: #f7f8fd;
+  border: 0.2rem solid #bf88f8;
+  margin-right: 1rem;
+}
+
+.field i {
+  color: #bf88f8;
+  font-weight: 300;
+}
+
 @media only screen and (min-width: 768px) {
   .nav {
     bottom: 20%;
