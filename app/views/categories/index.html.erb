@@ -3,7 +3,10 @@
     <div class="user-info">
       <div class="avatar-img">
         <%= link_to edit_user_registration_path do %>
-          <%= image_tag "avatar.png", :class => "avatar" %>
+          <% if current_user.avatar.attached? %>
+            <%= image_tag current_user.avatar.variant(resize: "100x100") class="resource-img"%>
+          <% else %>
+            <%= image_tag "avatar.png", :class => "avatar" %>
           <% end %>
       </div>
       <div class="user-details">
@@ -26,9 +29,9 @@
      <% if @categories.exists? %>
       <ul class="category-lists-wrapper">
           <% @categories.each do |category| %>
-           <%= link_to category_path(category.id), method: :get do %> 
+           <%= link_to category_path(category.id), method: :get do %>
           <li>
-          
+
             <div class='desc'>
             <ion-icon name="<%= category.icon %>" class="list-image <%= category.icon %>"></ion-icon>
               <span class="desc-text">
@@ -37,16 +40,16 @@
               </span>
             </div>
               <p class='strong'>- $<%= category.businesses.sum(:amount) || '0.00'%>
-              
+
               </p>
-          </li> 
+          </li>
           <% end %>
           <% end %>
       </ul>
- 
-   
+
+
    <% else %>
-          <p class="nil-category">No Category Added yet</p> 
+          <p class="nil-category">No Category Added yet</p>
       <% end %>
   <div>
 </div>
