@@ -3,13 +3,31 @@
   <head>
     <title>BudgetApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta
+      name="description"
+      content="A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what."
+    />
+    <meta
+			property="og:description"
+			content="A Budget-app is mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what."
+		/>
+    <meta property="og:image" content=”screenshot.png” />
+    <meta property="og:title" content="My Budget Manager" />
+		<meta
+			name="image"
+			property="og:image"
+			content="https://my-budget-manager.herokuapp.com/assets/images/screenshot.png"
+		/>
+		<meta name="author" content="Victor Ebube Okoroji" />
+		<meta property="og:url" content="https://my-budget-manager.herokuapp.com/" />
+    <%= favicon_link_tag 'favicon.ico' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= javascript_include_tag "" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "header" %>
     <%= stylesheet_link_tag "category" %>
-    
+
   </head>
 
   <body>

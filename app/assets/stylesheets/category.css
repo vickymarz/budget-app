@@ -249,15 +249,16 @@
   gap: 10px;
   background-color: #fcdc34;
   color: black;
-  padding: 10px 30px;
+  padding: 10px 50px;
   margin-top: 20px;
   border-radius: 30px;
   align-items: center;
 }
 
-#list_image {
+#list-img {
   width: 20px;
   height: 20px;
+  padding: 10px;
 }
 
 .desc img {
@@ -392,7 +393,7 @@ hr {
   background: linear-gradient(135deg, #0ff0b3 0%, #036ed9 100%);
 }
 
-.house {
+.home {
   background: linear-gradient(135deg, #e3e3e3 0%, #5d6874 100%);
 }
 
